@@ -36,8 +36,19 @@
 
 <h2>Установка:</h2>
 
+<br>Склонируйте репозиторий </br>
 > git clone https://github.com/yutanov/django_REST_blog.git
 
+<br>Перейдите в каталог репозитория </br>
 > cd django_REST_blog
 
+<br>Запустите миграции </br>
+> docker-compose run web manage.py migrate
+
+<br>Создайте superuser </br>
+> docker-compose run web manage.py createsuperuser
+
+<br>Запустите контейнер </br>
 > docker-compose up
+
+<br>После запуска контейнера переходите на адрес http://0.0.0.0:8000/</br>
