@@ -3,12 +3,17 @@
 <h2>Описание</h2>
 
 <p>Задействованы фреймворки django, django REST framework
+  
 Хранение данных осуществляется в субд PostgreSQL
+  
 Проект упакован в контейнер docker-compose</p>
 
 <p>Представлен REST API для системы комментариев блога
+  
 Возможность добавления статьи и комметариев, в свою очередь к каждому комментарию также может быть добавлен комментарий
+  
 Вложенность комментариев не ограничена
+  
 Есть система аутентификации</p>
 
 <h2>Установка:</h2>
@@ -34,23 +39,37 @@
 Перейдите по адресу http://0.0.0.0:8000/
 
 <h3>Доступны следующие панели администрирования URLS </h3>
+
 <br>Статьи: </br>
+
 > articles/
+> 
 > articles<drf_format_suffix:format>
+> 
 > articles/<int:pk>
+> 
 > articles/<int:pk><drf_format_suffix:format>
 
 <br>Комментарии: </br>
+
 > comments
+> 
 > comments<drf_format_suffix:format>
+> 
 > comments/<int:pk>
+> 
 > comments/<int:pk><drf_format_suffix:format>
 
 <br>Пользователи: </br>
+
 > users
+> 
 > users<drf_format_suffix:format>
+> 
 > users/<int:pk>
+> 
 > users/<int:pk><drf_format_suffix:format>
 
 <br>Админка: </br>
+
 > admin
