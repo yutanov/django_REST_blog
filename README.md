@@ -42,11 +42,11 @@
 <br>Перейдите в каталог репозитория</br>
 > cd django_REST_blog
 
-<br>Создайте суперюзера</br>
-> docker-compose run web python manage.py createsuperuser
-
 <br>Запустите миграции</br>
 > docker-compose run web python manage.py migrate
+
+<br>Создайте суперюзера</br>
+> docker-compose run web python manage.py createsuperuser
 
 <br>Запустите контейнер</br>
 > docker-compose up
