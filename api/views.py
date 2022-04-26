@@ -42,3 +42,7 @@ class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.CommentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly,
                           IsOwnerOrReadOnly]
+
+
+def index(request):
+    return render(request, 'index.html')
