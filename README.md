@@ -11,29 +11,6 @@
 <br>Вложенность комментариев не ограничена.</br>
 <br>Есть система аутентификации. </br>
 
-<br>Доступны следующие панели администрирования URLS:</br>
-
-<br>Статьи: </br>
-<br>articles/ </br>
-<br>articles<drf_format_suffix:format> </br>
-<br>articles/<int:pk>/ </br>
-<br>articles/<int:pk><drf_format_suffix:format> </br>
-
-<br>Комментарии: </br>
-<br>comments/ </br>
-<br>comments<drf_format_suffix:format> </br>
-<br>comments/<int:pk>/ </br>
-<br>comments/<int:pk><drf_format_suffix:format> </br>
-
-<br>Пользователи: </br>
-<br>users/ </br>
-<br>users<drf_format_suffix:format> </br>
-<br>users/<int:pk>/ </br>
-<br>users/<int:pk><drf_format_suffix:format> </br>
-
-<br>Админка: </br>
-<br>admin/ </br>
-
 <h2>Установка:</h2>
 
 <br>Склонируйте репозиторий</br>
@@ -55,3 +32,25 @@
 > docker-compose up
 
 <br>Перейдите по адресу http://0.0.0.0:8000/</br>
+
+<h3>Доступны следующие панели администрирования URLS </h3>
+<br>Статьи: </br>
+<br>articles/ </br>
+<br>articles<drf_format_suffix:format> </br>
+<br>articles/<int:pk>/ </br>
+<br>articles/<int:pk><drf_format_suffix:format> </br>
+
+<br>Комментарии: </br>
+<br>comments/ </br>
+<br>comments<drf_format_suffix:format> </br>
+<br>comments/<int:pk>/ </br>
+<br>comments/<int:pk><drf_format_suffix:format> </br>
+
+<br>Пользователи: </br>
+<br>users/ </br>
+<br>users<drf_format_suffix:format> </br>
+<br>users/<int:pk>/ </br>
+<br>users/<int:pk><drf_format_suffix:format> </br>
+
+<br>Админка: </br>
+<br>admin/ </br>
