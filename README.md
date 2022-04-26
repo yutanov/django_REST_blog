@@ -2,55 +2,55 @@
 
 <h2>Описание</h2>
 
-<br>Задействованы фреймворки django, django REST framework.</br>
-<br>Хранение данных осуществляется в субд PostgreSQL</br>
-<br>Проект упакован в контейнер docker-compose</br>
+<p>Задействованы фреймворки django, django REST framework
+Хранение данных осуществляется в субд PostgreSQL
+Проект упакован в контейнер docker-compose</p>
 
-<br>Представлен REST API для системы комментариев блога</br>
-<br>Возможность добавления статьи и комметариев, в свою очередь к каждому комментарию также может быть добавлен комментарий.</br>
-<br>Вложенность комментариев не ограничена.</br>
-<br>Есть система аутентификации. </br>
+<p>Представлен REST API для системы комментариев блога
+Возможность добавления статьи и комметариев, в свою очередь к каждому комментарию также может быть добавлен комментарий
+Вложенность комментариев не ограничена
+Есть система аутентификации</p>
 
 <h2>Установка:</h2>
 
-<br>Склонируйте репозиторий</br>
+Склонируйте репозиторий
 > git clone https://github.com/yutanov/django_REST_blog.git
 
-<br>Перейдите в каталог репозитория</br>
+Перейдите в каталог репозитория
 > cd django_REST_blog
 
-<br>Создайте образ контейнера</br>
+Создайте образ контейнера
 > docker-compose build
 
-<br>Запустите миграции</br>
+Запустите миграции
 > docker-compose run web python manage.py migrate
 
-<br>Создайте суперюзера</br>
+Создайте суперюзера
 > docker-compose run web python manage.py createsuperuser
 
-<br>Запустите контейнер</br>
+Запустите контейнер
 > docker-compose up
 
-<br>Перейдите по адресу http://0.0.0.0:8000/</br>
+Перейдите по адресу http://0.0.0.0:8000/
 
 <h3>Доступны следующие панели администрирования URLS </h3>
 <br>Статьи: </br>
-<br>articles/ </br>
-<br>articles<drf_format_suffix:format> </br>
-<br>articles/<int:pk>/ </br>
-<br>articles/<int:pk><drf_format_suffix:format> </br>
+> articles/
+> articles<drf_format_suffix:format>
+> articles/<int:pk>
+> articles/<int:pk><drf_format_suffix:format>
 
 <br>Комментарии: </br>
-<br>comments/ </br>
-<br>comments<drf_format_suffix:format> </br>
-<br>comments/<int:pk>/ </br>
-<br>comments/<int:pk><drf_format_suffix:format> </br>
+> comments
+> comments<drf_format_suffix:format>
+> comments/<int:pk>
+> comments/<int:pk><drf_format_suffix:format>
 
 <br>Пользователи: </br>
-<br>users/ </br>
-<br>users<drf_format_suffix:format> </br>
-<br>users/<int:pk>/ </br>
-<br>users/<int:pk><drf_format_suffix:format> </br>
+> users
+> users<drf_format_suffix:format>
+> users/<int:pk>
+> users/<int:pk><drf_format_suffix:format>
 
 <br>Админка: </br>
-<br>admin/ </br>
+> admin
