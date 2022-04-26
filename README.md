@@ -42,6 +42,9 @@
 <br>Перейдите в каталог репозитория</br>
 > cd django_REST_blog
 
+<br>Создайте образ контейнера</br>
+> docker-compose build
+
 <br>Запустите миграции</br>
 > docker-compose run web python manage.py migrate
 
