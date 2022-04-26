@@ -1,43 +1,38 @@
 # django_REST_blog
 
 <h2>Описание</h2>
-<br>
-Задействованы фреймворки django, django REST framework.
-Хранение данных осуществляется в субд PostgreSQL
-Проект упакован в контейнер docker-compose
-</br>
 
-<br>
-Представлен REST API для системы комментариев блога
-Возможность добавления статьи и комметариев, в свою очередь к каждому комментарию также может быть добавлен комментарий.
-Вложенность комментариев неограничена.
-Есть система аутентификации. Superuser - login: admin, password: admin
-</br>
+<br>Задействованы фреймворки django, django REST framework.</br>
+<br>Хранение данных осуществляется в субд PostgreSQL</br>
+<br>Проект упакован в контейнер docker-compose</br>
 
-<br>
-Доступны следующие панели администрирования URLS:
+<br>Представлен REST API для системы комментариев блога</br>
+<br>Возможность добавления статьи и комметариев, в свою очередь к каждому комментарию также может быть добавлен комментарий.</br>
+<br>Вложенность комментариев неограничена.</br>
+<br>Есть система аутентификации. Superuser - login: admin, password: admin</br>
 
-Статьи:
-articles/
-articles<drf_format_suffix:format>
-articles/<int:pk>/
-articles/<int:pk><drf_format_suffix:format>
+<br>Доступны следующие панели администрирования URLS:</br>
 
-Комментарии:
-comments/
-comments<drf_format_suffix:format>
-comments/<int:pk>/
-comments/<int:pk><drf_format_suffix:format>
+<br>Статьи: </br>
+<br>articles/ </br>
+<br>articles<drf_format_suffix:format> </br>
+<br>articles/<int:pk>/ </br>
+<br>articles/<int:pk><drf_format_suffix:format> </br>
 
-Пользователи:
-users/
-users<drf_format_suffix:format>
-users/<int:pk>/
-users/<int:pk><drf_format_suffix:format>
+<br>Комментарии: </br>
+<br>comments/ </br>
+<br>comments<drf_format_suffix:format> </br>
+<br>comments/<int:pk>/ </br>
+<br>comments/<int:pk><drf_format_suffix:format> </br>
 
-Админка:
-admin/
-</br>
+<br>Пользователи: </br>
+<br>users/ </br>
+<br>users<drf_format_suffix:format> </br>
+<br>users/<int:pk>/ </br>
+<br>users/<int:pk><drf_format_suffix:format> </br>
+
+<br>Админка: </br>
+<br>admin/ </br>
 
 <h2>Установка:</h2>
 
